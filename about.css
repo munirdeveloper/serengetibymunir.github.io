@@ -1,0 +1,184 @@
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e312f;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+  background-image: url(serengeti_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  color: transparent;
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Add this line to make the text transparent */
+  animation: hue 10s infinite linear;
+  padding: 0 15px;
+  margin: 0;
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+
+.menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.menu ul li a:hover {
+  background: green;
+}
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(serengeti_bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e312f;
+  color: #fff;
+}
+
+/* Updated styling for banner text */
+.banner-text {
+  color: #fff;
+  position: absolute;
+  top: 60%; /* Adjusted positioning to place it below the navbar */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.banner-text p {
+  margin: 15px 0 40px;
+  font-size: 23px;
+}
+
+.banner-text button {
+  background: green;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-family: "Libre Baskerville", serif;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    align-items: flex;
+  }
+  .menu ul {
+    padding: 0;
+  }
+  .menu ul li {
+    margin: 0 15px 0 0;
+  }
+  .socials {
+    margin-top: 25px;
+  }
+  .banner-text {
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  nav {
+    padding: 15px;
+  }
+  .menu ul li a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+.content-container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 10px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background: rgba(46, 49, 47, 0);
+}
