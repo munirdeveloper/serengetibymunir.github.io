@@ -192,4 +192,18 @@ h2 {
   cursor: pointer;
 }
 
+.map-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.map-link:hover {
+  background-color: olive;
+}
+
 /* from here */
